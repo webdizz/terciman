@@ -1,5 +1,6 @@
-#Thu Jul 29 13:51:12 EEST 2010
+#Sun Nov 07 01:17:04 EET 2010
 eclipse.preferences.version=1
 jarsExcludedFromWebInfLib=
+launchConfigExternalUrlPrefix=chrome-extension\://mnomololfnpikififjfooanboijijpjp/extension.html
 warSrcDir=war
 warSrcDirIsOutput=true
