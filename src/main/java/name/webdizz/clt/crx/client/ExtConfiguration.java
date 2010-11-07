@@ -20,7 +20,7 @@ public class ExtConfiguration {
 		/**
 		 * The destination language.
 		 */
-		DEST_LANGUAGE
+		DEST_LANGUAGE, MODE
 	}
 
 	public String getDestLanguage() {
@@ -30,4 +30,15 @@ public class ExtConfiguration {
 	public void setDestLanguage(String value) {
 		LOCAL_STORAGE.setItem(Configuration.DEST_LANGUAGE.name(), value);
 	}
+
+	public boolean isDebug() {
+		return Boolean
+				.valueOf(LOCAL_STORAGE.getItem(Configuration.MODE.name()));
+	}
+
+	public void setDebug(boolean value) {
+		LOCAL_STORAGE.setItem(Configuration.MODE.name(), Boolean.valueOf(value)
+				.toString());
+	}
+
 }

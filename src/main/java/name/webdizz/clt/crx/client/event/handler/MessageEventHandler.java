@@ -24,16 +24,17 @@ class MessageEventHandler implements Listener {
 		this.eventBus = eventBus;
 	}
 
-	/*
-	 * (non-Javadoc)
+	/**
+	 * Handles {@link com.google.gwt.chrome.crx.client.events.Message} from
+	 * content scripts.
 	 * 
-	 * @see
-	 * com.google.gwt.chrome.crx.client.events.MessageEvent.Listener#onMessage
-	 * (com.google.gwt.chrome.crx.client.events.MessageEvent.Message)
+	 * @param the
+	 *            {@link com.google.gwt.chrome.crx.client.events.Message} to
+	 *            handle
 	 */
 	public void onMessage(
 			final com.google.gwt.chrome.crx.client.events.Message message) {
-		CONSOLE.log("Message event handler");
+		CONSOLE.log("Message event handler receives a message");
 		if (null != message) {
 			processMessage(message);
 		}

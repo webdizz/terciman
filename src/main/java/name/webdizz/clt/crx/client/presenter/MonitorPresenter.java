@@ -4,7 +4,9 @@
 package name.webdizz.clt.crx.client.presenter;
 
 import name.webdizz.clt.crx.client.Alert;
+import name.webdizz.clt.crx.client.ExtConfiguration;
 
+import com.google.inject.Inject;
 import com.mvp4g.client.annotation.Presenter;
 import com.mvp4g.client.event.EventBus;
 import com.mvp4g.client.presenter.BasePresenter;
@@ -19,19 +21,22 @@ public class MonitorPresenter extends
 
 	interface IMonitorPresenterView {
 	}
+	
+	@Inject
+	private ExtConfiguration configuration;
 
 	public static class MonitorPresenterView implements IMonitorPresenterView {
 	}
 
 	public void onError(String message) {
-		//Alert.info("Error: " + message);
+		if(configuration.isDebug()) Alert.info("Error: " + message);
 	}
 
 	public void onInfo(String message) {
-		//Alert.info("Info: " + message);
+		if(configuration.isDebug()) Alert.info("Info: " + message);
 	}
 	
 	public void onTrace(String message) {
-		//Alert.info("Trace: " + message);
+		if(configuration.isDebug()) Alert.info("Trace: " + message);
 	}
 }
