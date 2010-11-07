@@ -22,7 +22,7 @@ import com.mvp4g.client.event.EventBus;
  * @author Izzet_Mustafayev
  * 
  */
-@Events(startView = BackgroundPageView.class, debug = true)
+@Events(startView = BackgroundPageView.class)
 public interface ExtEventBus extends EventBus {
 
 	@Start
