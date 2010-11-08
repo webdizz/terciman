@@ -52,7 +52,7 @@ public final class ContentScriptRequestListener implements Listener {
 					int selectionOffsetX = translation.getMessage().getOffsetX();
 					int selectionOffsetY = translation.getMessage().getOffsetY();
 					int offsetX = translation.getTranslation().getSrc().length()*5;
-					resultPanel.setPopupPosition(selectionOffsetX + offsetX, selectionOffsetY - 15);
+					resultPanel.setPopupPosition(selectionOffsetX + offsetX, selectionOffsetY - 5);
 				}
 			});
 		}
