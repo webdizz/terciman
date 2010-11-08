@@ -1,9 +1,11 @@
 package name.webdizz.clt.crx.client.translation.google;
 
+import java.util.ArrayList;
+
 import name.webdizz.clt.crx.client.ExtConfiguration;
 import name.webdizz.clt.crx.client.ExtEventBus;
-import name.webdizz.clt.crx.client.event.message.TranslationResultMessage;
 import name.webdizz.clt.crx.client.event.message.TranslateTextMessage;
+import name.webdizz.clt.crx.client.event.message.TranslationResultMessage;
 
 import com.google.gwt.language.client.translation.LangDetCallback;
 import com.google.gwt.language.client.translation.LangDetResult;
@@ -31,7 +33,8 @@ public final class GoogleTranslator {
 		});
 	}
 
-	private void translateText(final TranslateTextMessage message, LangDetResult result) {
+	private void translateText(final TranslateTextMessage message,
+			LangDetResult result) {
 		if (null == result.getError()) {
 			final String src = result.getLanguage();
 			final String dest = resolveDestLanguage();
@@ -60,12 +63,20 @@ public final class GoogleTranslator {
 		return lang;
 	}
 
-	private void handleTranslationResult(final String src, final String dest, final String from,
-			TranslationResult result) {
-		String translation = result.getTranslatedText();
-		// TODO: create TranslationResult here
+	private void handleTranslationResult(final String src, final String dest,
+			final String from, TranslationResult result) {
+		name.webdizz.clt.crx.client.translation.TranslationResult translationResult;
+		translationResult = new name.webdizz.clt.crx.client.translation.TranslationResult();
+		translationResult.setSrc(src);
+		translationResult.setDest(dest);
+		ArrayList<name.webdizz.clt.crx.client.translation.TranslationResult.Translation> translations;
+		translations = new ArrayList<name.webdizz.clt.crx.client.translation.TranslationResult.Translation>();
+		name.webdizz.clt.crx.client.translation.TranslationResult.Translation translation;
+		translation = new name.webdizz.clt.crx.client.translation.TranslationResult().new Translation();
+		translation.setTranslation(result.getTranslatedText());
+		translations.add(translation);
 		TranslationResultMessage transTextMsg;
-		transTextMsg = TranslationResultMessage.create(null);
+		transTextMsg = TranslationResultMessage.create(translationResult);
 		eventBus.showTranslatedText(transTextMsg);
 	}
 }
