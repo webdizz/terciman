@@ -4,13 +4,14 @@
 	<ui:style
 		type="name.webdizz.clt.crx.contentscript.client.translation.view.TranslationView.ViewStyle">
 			.main {
+				background-color: #4cb5e5;
 				white-space: nowrap;
 				background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #3cb8f1),
 					color-stop(50%, #4cb5e5), color-stop(100%, #3cb8f1) );
 				overflow: visible !important;
 				border-radius: 10px !important;
 				border-color: #42adde !important;
-				color: #fff !important;
+				color: #fafafa !important;
 				padding: 8px !important;
 				min-height: 30px;
 				min-width: 100px;
@@ -20,8 +21,8 @@
 			
 			.explanation {
 				margin-left: .5em;
-				color: #fff;
-				font-size: 0.9em;
+				color: #F0F4FC;
+				font-size: smaller;
 			}
 		</ui:style>
 	<g:HTMLPanel>
