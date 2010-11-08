@@ -18,7 +18,7 @@ public final class ContentScriptRequestListener implements Listener {
 
 	private static class TranslationResultPanel extends PopupPanel {
 		public TranslationResultPanel(ShowTranslatedTextMessage message) {
-			// enable autohide
+			// enable auto hide
 			super(true);
 			TranslationResultJs translationResult = message.getTranslation();
 			if (null != translationResult) {
@@ -51,7 +51,8 @@ public final class ContentScriptRequestListener implements Listener {
 				public void setPosition(int offsetWidth, int offsetHeight) {
 					int selectionOffsetX = translation.getMessage().getOffsetX();
 					int selectionOffsetY = translation.getMessage().getOffsetY();
-					resultPanel.setPopupPosition(selectionOffsetX + 30, selectionOffsetY - 60);
+					int offsetX = translation.getTranslation().getSrc().length()*5;
+					resultPanel.setPopupPosition(selectionOffsetX + offsetX, selectionOffsetY - 15);
 				}
 			});
 		}

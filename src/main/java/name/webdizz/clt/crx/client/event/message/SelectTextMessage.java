@@ -25,7 +25,7 @@ public class SelectTextMessage extends Message {
 	}-*/;
 
 	public static final native SelectTextMessage create(String text, NativeEvent event)/*-{
-		return {text: text, type:'SelectTextMessage', offsetX: event.screenX, offsetY: event.screenY};
+		return {text: text, type:'SelectTextMessage', offsetX: event.clientX, offsetY: event.pageY};
 	}-*/;
 
 }
