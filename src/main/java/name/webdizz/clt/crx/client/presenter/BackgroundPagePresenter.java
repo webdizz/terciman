@@ -19,7 +19,6 @@ import com.google.gwt.chrome.crx.client.Tabs;
 import com.google.gwt.chrome.crx.client.Tabs.OnDetectLanguageCallback;
 import com.google.gwt.chrome.crx.client.Tabs.OnTabCallback;
 import com.google.gwt.chrome.crx.client.Tabs.Tab;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.mvp4g.client.annotation.Presenter;
 import com.mvp4g.client.presenter.BasePresenter;
@@ -46,7 +45,7 @@ public class BackgroundPagePresenter extends BasePresenter<BackgroundPagePresent
 	/**
 	 * The interface for background page.
 	 * 
-	 * @author Izzet_Mustafayev
+	 * @author Izzet Mustafa
 	 * 
 	 */
 	public interface IBackgroundPageView {
@@ -93,11 +92,14 @@ public class BackgroundPagePresenter extends BasePresenter<BackgroundPagePresent
 		try {
 			TranslationFactory.instance().translate(message.getText(), new ITranslationHandler() {
 				public void onTranslate(final TranslationResult result) {
-					if (null == result) {
-						Window.alert("Word not found");
+					TranslationResult processingResult = result;
+					if (null == processingResult) {
+						eventBus.error("Unable to find translation for: "+message.getText());
+						processingResult = new TranslationResult();
+						processingResult.setSrc("Unable to find translation for: "+message.getText());
 					}
 					TranslationResultMessage message;
-					message = TranslationResultMessage.create(result);
+					message = TranslationResultMessage.create(processingResult);
 					eventBus.showTranslatedText(message);
 				}
 			});
