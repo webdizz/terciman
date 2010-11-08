@@ -1,0 +1,4 @@
+The Google Chrome extension to translate selected word to/from Crimean Tatar language.
+Helps to translate selected word from the page with pressed Ctrl key.
+Some detailes can be found here http://webdizz.name/posts/terciman/.
+This extension is based on GWT and uses the mvp4g - MVP framework and gwt4chrome - library to build Google Chrome extension on GWT.
