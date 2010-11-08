@@ -6,7 +6,7 @@ package name.webdizz.clt.crx.client.event.message;
 import name.webdizz.clt.crx.client.translation.TranslationResult;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class TranslationResultMessage extends Message {

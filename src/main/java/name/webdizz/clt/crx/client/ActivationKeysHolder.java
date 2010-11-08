@@ -9,7 +9,7 @@ import java.util.List;
 import com.google.gwt.dom.client.NativeEvent;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class ActivationKeysHolder {

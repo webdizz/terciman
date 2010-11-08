@@ -11,7 +11,7 @@ import com.google.code.gwt.database.client.service.Update;
 import com.google.code.gwt.database.client.service.VoidCallback;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 @Connection(name = "clt_db", version = "1.0", description = "The CLT Local database.", maxsize = 1000)

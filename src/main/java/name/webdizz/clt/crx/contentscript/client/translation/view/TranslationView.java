@@ -16,7 +16,7 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Widget;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class TranslationView extends Composite implements ITranslationView {

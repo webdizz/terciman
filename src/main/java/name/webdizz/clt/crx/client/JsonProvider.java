@@ -9,7 +9,7 @@ import com.google.gwt.chrome.crx.client.ContentScript.ManifestInfo;
 /**
  * Stab class for loading JSON parser.
  * 
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 @ManifestInfo(path = "json.js", whiteList = { "http://*/*", "https://*/*",

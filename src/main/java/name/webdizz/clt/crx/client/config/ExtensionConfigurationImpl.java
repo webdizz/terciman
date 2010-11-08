@@ -4,7 +4,7 @@
 package name.webdizz.clt.crx.client.config;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class ExtensionConfigurationImpl implements ExtensionConfiguration {

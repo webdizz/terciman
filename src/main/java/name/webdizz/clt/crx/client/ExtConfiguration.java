@@ -7,7 +7,7 @@ import com.google.gwt.chrome.crx.client.Chrome;
 import com.google.gwt.chrome.crx.client.LocalStorage;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class ExtConfiguration {

@@ -19,7 +19,7 @@ import com.mvp4g.client.annotation.Start;
 import com.mvp4g.client.event.EventBus;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 @Events(startView = BackgroundPageView.class)

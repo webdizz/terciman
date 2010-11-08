@@ -7,7 +7,7 @@ import name.webdizz.clt.crx.client.translation.TranslationResult;
 import name.webdizz.clt.crx.client.translation.TranslationResultJs;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class ShowTranslatedTextMessage extends Message {

@@ -8,7 +8,7 @@ import java.util.Date;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public final class Translation extends JavaScriptObject {

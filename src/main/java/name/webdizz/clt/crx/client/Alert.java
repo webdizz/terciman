@@ -6,7 +6,7 @@ package name.webdizz.clt.crx.client;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class Alert extends JavaScriptObject {

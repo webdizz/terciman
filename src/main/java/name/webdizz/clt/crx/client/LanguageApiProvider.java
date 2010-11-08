@@ -9,7 +9,7 @@ import com.google.gwt.chrome.crx.client.ExtensionScript.ManifestInfo;
 /**
  * Stab to load Google Language API.
  * 
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 @ManifestInfo(path = "http://google.com/jsapi", script = "google.load(\"language\", \"1\");")

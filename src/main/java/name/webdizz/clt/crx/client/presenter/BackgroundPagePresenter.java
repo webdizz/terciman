@@ -25,7 +25,7 @@ import com.mvp4g.client.annotation.Presenter;
 import com.mvp4g.client.presenter.BasePresenter;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 @Presenter(view = BackgroundPageView.class)
@@ -46,7 +46,7 @@ public class BackgroundPagePresenter extends BasePresenter<BackgroundPagePresent
 	/**
 	 * The interface for background page.
 	 * 
-	 * @author Izzet_Mustafayev
+	 * @author Izzet_Mustafa
 	 * 
 	 */
 	public interface IBackgroundPageView {

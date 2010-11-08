@@ -4,7 +4,7 @@
 package name.webdizz.clt.crx.client.event.message;
 
 /**
- * @author Izzet_Mustafayev
+ * @author Izzet_Mustafa
  * 
  */
 public class TranslateTextMessage extends Message {
