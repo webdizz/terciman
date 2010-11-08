@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Translation view</title>
+<style>
+<!--
+.main {
+	white-space: nowrap;
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #3cb8f1),
+		color-stop(50%, #4cb5e5), color-stop(100%, #3cb8f1) );
+	overflow: visible !important;
+	border-radius: 10px !important;
+	border-color: #42adde !important;
+	color: #fff !important;
+	padding: 8px !important;
+	min-height: 30px;
+	min-width: 100px;
+	text-align: left;
+	font-size: 1em !important;
+}
+
+.explanation {
+	margin-left: .5em;
+	color: #fff;
+	font-size: 0.9em;
+}
+-->
+</style>
+</head>
+<body>
+<div class="main">
+<dl style="margin: 0 0 1em 0">
+	<dt><b> <span ui:field="sourceWord" />Source text </b></dt>
+	<dd style="margin: 5px; text-overflow: clip;" ui:field="translationsElement" >Translation Translation Translation Translation Translation </dd>
+</dl>
+<!-- 
+			<span id="cltStoreWord" style="cursor:pointer;">Store this word</span>
+			<br />
+			<span id="cltLoadWords" style="cursor:pointer;">Load words</span>
+			 --></div>
+</body>
+</html>
