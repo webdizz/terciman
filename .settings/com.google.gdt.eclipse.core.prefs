@@ -1,6 +1,6 @@
-#Sun Nov 07 01:17:04 EET 2010
+#Mon Nov 08 13:08:36 EET 2010
 eclipse.preferences.version=1
-jarsExcludedFromWebInfLib=
+jarsExcludedFromWebInfLib=/home/webdizz/.m2/repository/org/powermock/powermock-mockito-release-full/1.4/powermock-mockito-release-full-1.4-full.jar
 launchConfigExternalUrlPrefix=chrome-extension\://mnomololfnpikififjfooanboijijpjp/extension.html
 warSrcDir=war
 warSrcDirIsOutput=true
