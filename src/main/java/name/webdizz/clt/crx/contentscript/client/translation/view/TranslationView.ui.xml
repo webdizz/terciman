@@ -4,26 +4,24 @@
 	<ui:style
 		type="name.webdizz.clt.crx.contentscript.client.translation.view.TranslationView.ViewStyle">
 			.main {
-				background-color: #363636;
 				white-space: nowrap;
-				background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #000),
-					color-stop(50%, #363636), color-stop(100%, #000) );
+				background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #3cb8f1),
+					color-stop(50%, #4cb5e5), color-stop(100%, #3cb8f1) );
 				overflow: visible !important;
-				-webkit-border-radius: 10px !important;
-				border-color: #000000 !important;
-				opacity: 0.95 !important;
-				color: #fafafa !important;
+				border-radius: 10px !important;
+				border-color: #42adde !important;
+				color: #fff !important;
 				padding: 8px !important;
 				min-height: 30px;
 				min-width: 100px;
 				text-align: left;
-				font-size: 0.9em !important;
+				font-size: 1em !important;
 			}
 			
 			.explanation {
 				margin-left: .5em;
-				color: #F0F4FC;
-				font-size: small;
+				color: #fff;
+				font-size: 0.9em;
 			}
 		</ui:style>
 	<g:HTMLPanel>
@@ -34,7 +32,7 @@
 						<span ui:field="sourceWord" />
 					</b>
 				</dt>
-				<dd style="margin:0 0 0 .5em" ui:field="translationsElement" />
+				<dd style="margin: 5px; text-overflow: clip;" ui:field="translationsElement" />
 			</dl>
 			<!-- 
 			<span id="cltStoreWord" style="cursor:pointer;">Store this word</span>
