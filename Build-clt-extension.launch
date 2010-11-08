@@ -25,7 +25,7 @@
 </listAttribute>
 <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.google.gwt.dev.Compiler"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-ea -logLevel INFO -style DETAILED -war ${workspace_loc:terciman}/war name.webdizz.clt.crx.contentscript.ContentScript name.webdizz.clt.crx.ExtensionDebug"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-ea -logLevel INFO -style PRETTY -gen ${workspace_loc:terciman}/target/gen -war ${workspace_loc:terciman}/war -localWorkers 2 -extra ${workspace_loc:terciman}/target/extra name.webdizz.clt.crx.contentscript.ContentScript name.webdizz.clt.crx.ExtensionDebug"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="terciman"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx712m"/>
 </launchConfiguration>
